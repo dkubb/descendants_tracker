@@ -3,7 +3,7 @@
 require File.expand_path('../lib/descendants_tracker/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name        = 'immutable'
+  gem.name        = 'descendants_tracker'
   gem.version     = DescendantsTracker::VERSION.dup
   gem.authors     = [ 'Dan Kubb', 'Piotr Solnica', 'Markus Schirp' ]
   gem.email       = [ 'dan.kubb@gmail.com', 'piotr.solnica@gmail.com', 'mbj@seonic.net' ]
