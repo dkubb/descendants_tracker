@@ -6,7 +6,7 @@ descendants_tracker
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/descendants_tracker)
 
 This is a small standalone gem featuring a module ripped out from [veritas](https://github.com/dkubb/veritas).
-It allows to make objects descendants_tracker in an unobtrusive way.
+It allows to trak descendants in an unobtrusive way.
 
 Installation
 ------------
