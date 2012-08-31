@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email       = [ 'dan.kubb@gmail.com', 'piotr.solnica@gmail.com', 'mbj@seonic.net' ]
   gem.description = 'Module that adds descendant tracking to a class'
   gem.summary     = gem.description
-  gem.homepage    = 'https://github.com/mbj/descendants_tracker'
+  gem.homepage    = 'https://github.com/dkubb/descendants_tracker'
 
   gem.require_paths    = [ 'lib' ]
   gem.files            = `git ls-files`.split("\n")
