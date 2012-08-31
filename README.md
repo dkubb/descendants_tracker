@@ -1,9 +1,9 @@
 descendants_tracker
 ===================
 
-[![Build Status](https://secure.travis-ci.org/mbj/descendants_tracker.png?branch=master)](http://travis-ci.org/mbj/descendants_tracker)
-[![Dependency Status](https://gemnasium.com/mbj/descendants_tracker.png)](https://gemnasium.com/mbj/descendants_tracker)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/descendants_tracker)
+[![Build Status](https://secure.travis-ci.org/dkubb/descendants_tracker.png?branch=master)](http://travis-ci.org/dkubb/descendants_tracker)
+[![Dependency Status](https://gemnasium.com/dkubb/descendants_tracker.png)](https://gemnasium.com/dkubb/descendants_tracker)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dkubb/descendants_tracker)
 
 This is a small standalone gem featuring a module ripped out from [veritas](https://github.com/dkubb/veritas).
 It allows to trak descendants in an unobtrusive way.
@@ -16,7 +16,7 @@ There is no gem release yet so use git source.
 In your **Gemfile**
 
 ``` ruby
-gem 'descendants_tracker', :git => 'https://github.com/mbj/descendants_tracker'
+gem 'descendants_tracker', :git => 'https://github.com/dkubb/descendants_tracker'
 ```
 
 Examples
@@ -30,7 +30,7 @@ end
 class Bar < Foo
 end
 
-Foo.descendants # => [Foo]
+Foo.descendants # => [Bar]
 ```
 
 Credits
@@ -38,6 +38,7 @@ Credits
 
 * Dan Kubb ([dkubb](https://github.com/dkubb))
 * Piotr Solnica ([solnic](https://github.com/solnic))
+* Markus Schirp ([mbj](https://github.com/mbj))
 
 Contributing
 -------------
@@ -53,8 +54,7 @@ Contributing
 License
 -------
 
-Copyright (c) 2011-2012 Piotr Solnica
-Copyright (c) 2012 Markus Schirp (packaging)
+Copyright (c) 2011-2012 Dan Kubb
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
