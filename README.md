@@ -5,8 +5,7 @@ descendants_tracker
 [![Dependency Status](https://gemnasium.com/dkubb/descendants_tracker.png)](https://gemnasium.com/dkubb/descendants_tracker)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dkubb/descendants_tracker)
 
-This is a small standalone gem featuring a module ripped out from [veritas](https://github.com/dkubb/veritas).
-It allows to trak descendants in an unobtrusive way.
+Small module to track descendants in an unobtrusive way.
 
 Installation
 ------------
