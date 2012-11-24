@@ -33,7 +33,7 @@ private
   #
   # @param [Class] descendant
   #
-  # @return [undefined]
+  # @return [self]
   #
   # @api private
   def inherited(descendant)
