@@ -3,9 +3,12 @@ module DescendantsTracker
 
   # Return the descendants of this class
   #
+  # @example
+  #   descendants = ParentClass.descendants
+  #
   # @return [Array<Class>]
   #
-  # @api private
+  # @api public
   def descendants
     @descendants ||= []
   end
