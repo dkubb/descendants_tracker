@@ -66,7 +66,9 @@ Contributing
 License
 -------
 
-Copyright (c) 2011-2012 Dan Kubb
+Copyright (c) 2011-2012 Piotr Solnica (source maintainer)
+Copyright (c) 2012 Dan Kubb (author)
+Copyright (c) 2012 Markus Schirp (packaging)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
