@@ -31,7 +31,6 @@ group :metrics do
   gem 'reek',      '~> 1.2.8', :github => 'dkubb/reek'
   gem 'roodi',     '~> 2.1.0'
   gem 'yardstick', '~> 0.8.0'
-  gem 'simplecov'
 
   platforms :ruby_18, :ruby_19 do
     # this indirectly depends on ffi which does not build on ruby-head
@@ -48,6 +47,10 @@ group :metrics do
     gem 'mspec',       '~> 1.5.17'
     gem 'rcov',        '~> 1.0.0'
     gem 'ruby2ruby',   '= 1.2.2'   # for heckle
+  end
+
+  platforms :ruby_19 do
+    gem 'simplecov', '~> 0.7.1'
   end
 
   platforms :rbx do
