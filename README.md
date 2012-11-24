@@ -35,7 +35,7 @@ Examples
 
 ``` ruby
 class Foo
-  extend Virtus::DescendantsTracker
+  extend DescendantsTracker
 end
 
 class Bar < Foo
