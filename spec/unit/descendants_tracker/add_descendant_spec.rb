@@ -4,8 +4,8 @@ describe DescendantsTracker, '#add_descendant' do
   subject { object.add_descendant(descendant) }
 
   let(:described_class) { Class.new { extend DescendantsTracker } }
-  let(:object)          { Class.new(described_class)                      }
-  let(:descendant)      { Class.new                                       }
+  let(:object)          { Class.new(described_class)              }
+  let(:descendant)      { Class.new                               }
 
   it { should equal(object) }
 
