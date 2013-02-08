@@ -3,7 +3,7 @@ descendants_tracker
 
 [![Build Status](https://secure.travis-ci.org/dkubb/descendants_tracker.png?branch=master)](http://travis-ci.org/dkubb/descendants_tracker)
 [![Dependency Status](https://gemnasium.com/dkubb/descendants_tracker.png)](https://gemnasium.com/dkubb/descendants_tracker)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dkubb/descendants_tracker)
+[![Code Climate](https://codeclimate.com/github/dkubb/descendants_tracker.png)](https://codeclimate.com/github/dkubb/descendants_tracker)
 
 Small module to track descendants in an unobtrusive way.
 
