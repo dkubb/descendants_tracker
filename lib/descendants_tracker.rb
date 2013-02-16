@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # Module that adds descendant tracking to a class
 module DescendantsTracker
 
