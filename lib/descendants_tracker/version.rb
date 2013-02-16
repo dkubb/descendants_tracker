@@ -1,5 +1,8 @@
 # encoding: utf-8
 
 module DescendantsTracker
-  VERSION = '0.0.1'.freeze
-end
+
+  # Unreleased gem version
+  VERSION = '0.0.2'.freeze
+
+end # module DescendantsTracker
