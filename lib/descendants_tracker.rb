@@ -23,7 +23,7 @@ module DescendantsTracker
   #
   # @private
   def self.setup(descendant)
-    descendant.instance_variable_set('@descendants', [])
+    descendant.instance_variable_set(:@descendants, [])
   end
 
   # Add the descendant to this class and the superclass
