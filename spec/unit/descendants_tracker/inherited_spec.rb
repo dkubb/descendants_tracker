@@ -10,8 +10,8 @@ describe DescendantsTracker, '#inherited' do
 
   it 'delegates to the superclass #inherited method' do
     superklass.should_receive(:inherited) do |descendant|
-      descendant.should be_instance_of(Class)
-      descendant.ancestors.should include(object)
+      expect(descendant).to be_instance_of(Class)
+      expect(descendant.ancestors).to include(object)
     end
     subject
   end
