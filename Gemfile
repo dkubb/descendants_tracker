@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'devtools', git: 'https://github.com/rom-rb/devtools.git'
+group :development, :test do
+  gem 'devtools', git: 'https://github.com/rom-rb/devtools.git'
+end
 
-# Added by devtools
 eval_gemfile 'Gemfile.devtools'

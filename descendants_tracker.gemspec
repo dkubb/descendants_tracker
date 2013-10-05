@@ -17,7 +17,5 @@ Gem::Specification.new do |gem|
   gem.test_files       = `git ls-files -- spec/unit`.split($/)
   gem.extra_rdoc_files = %w[LICENSE README.md CONTRIBUTING.md TODO]
 
-  gem.add_development_dependency('rake',  '~> 10.1.0')
-  gem.add_development_dependency('rspec', '~> 2.13.0')
-  gem.add_development_dependency('yard',  '~> 0.8.6.1')
+  gem.add_development_dependency('bundler', '~> 1.3', '>= 1.3.5')
 end
