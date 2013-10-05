@@ -15,7 +15,6 @@ module DescendantsTracker
   def self.setup(descendant)
     descendant.instance_variable_set('@descendants', [])
   end
-  private_class_method :setup
 
   # Return the descendants of this class
   #
