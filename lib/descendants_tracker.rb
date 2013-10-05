@@ -13,7 +13,13 @@ module DescendantsTracker
   # @api public
   attr_reader :descendants
 
-  # @private
+  # Hook called when module is extended
+  #
+  # @param [Class<DescendantsTracker>] descendant
+  #
+  # @return [undefined]
+  #
+  # @api private
   def self.extended(descendant)
     descendant.instance_variable_set(:@descendants, [])
   end
