@@ -13,19 +13,21 @@ module DescendantsTracker
   # @api public
   attr_reader :descendants
 
-  # Hook called when module is extended
+  # Setup the class for descendant tracking
   #
   # @param [Class<DescendantsTracker>] descendant
   #
   # @return [undefined]
   #
   # @api private
-  def self.extended(descendant)
+  def self.setup(descendant)
     descendant.instance_variable_set(:@descendants, [])
   end
 
-  singleton_class.class_eval { alias_method :setup, :extended }
-  private_class_method :extended
+  class << self
+    alias_method :extended, :setup
+    private :extended
+  end
 
   # Add the descendant to this class and the superclass
   #
