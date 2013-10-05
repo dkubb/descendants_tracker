@@ -15,16 +15,11 @@ module DescendantsTracker
 
   # @private
   def self.extended(descendant)
-    setup(descendant)
-  end
-  private_class_method :extended
-
-  # @return [Array]
-  #
-  # @private
-  def self.setup(descendant)
     descendant.instance_variable_set(:@descendants, [])
   end
+
+  singleton_class.class_eval { alias_method :setup, :extended }
+  private_class_method :extended
 
   # Add the descendant to this class and the superclass
   #
