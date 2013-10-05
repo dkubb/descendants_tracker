@@ -3,6 +3,16 @@
 # Module that adds descendant tracking to a class
 module DescendantsTracker
 
+  # Return the descendants of this class
+  #
+  # @example
+  #   descendants = ParentClass.descendants
+  #
+  # @return [Array<Class<DescendantsTracker>>]
+  #
+  # @api public
+  attr_reader :descendants
+
   # @private
   def self.extended(descendant)
     setup(descendant)
@@ -14,18 +24,6 @@ module DescendantsTracker
   # @private
   def self.setup(descendant)
     descendant.instance_variable_set('@descendants', [])
-  end
-
-  # Return the descendants of this class
-  #
-  # @example
-  #   descendants = ParentClass.descendants
-  #
-  # @return [Array<Class>]
-  #
-  # @api public
-  def descendants
-    @descendants
   end
 
   # Add the descendant to this class and the superclass
