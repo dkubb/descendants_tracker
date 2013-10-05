@@ -1,5 +1,4 @@
-descendants_tracker
-===================
+# descendants_tracker
 
 [![Gem Version](https://badge.fury.io/rb/descendants_tracker.png)][gem]
 [![Build Status](https://secure.travis-ci.org/dkubb/descendants_tracker.png?branch=master)][travis]
@@ -15,8 +14,7 @@ descendants_tracker
 
 Small module to track descendants in an unobtrusive way.
 
-Examples
---------
+## Examples
 
 ``` ruby
 class Foo
@@ -29,15 +27,13 @@ end
 Foo.descendants # => [Bar]
 ```
 
-Credits
--------
+## Credits
 
 * Dan Kubb ([dkubb](https://github.com/dkubb))
 * Piotr Solnica ([solnic](https://github.com/solnic))
 * Markus Schirp ([mbj](https://github.com/mbj))
 
-Contributing
-------------
+## Contributing
 
 * If you want your code merged into the mainline, please discuss the proposed changes with me before doing any work on it. This library is still in early development, and the direction it is going may not always be clear. Some features may not be appropriate yet, may need to be deferred until later when the foundation for them is laid, or may be more applicable in a plugin.
 * Fork the project.
@@ -48,8 +44,7 @@ Contributing
 * Run "rake ci". This must pass and not show any regressions in the metrics for the code to be merged.
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright
----------
+## Copyright
 
 Copyright &copy; 2012-2013 Dan Kubb (author)
 Copyright &copy; 2011-2012 Piotr Solnica (source maintainer)
