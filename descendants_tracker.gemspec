@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.description = 'Module that adds descendant tracking to a class'
   gem.summary     = gem.description
   gem.homepage    = 'https://github.com/dkubb/descendants_tracker'
+  gem.license     = 'MIT'
 
   gem.require_paths    = %w[lib]
   gem.files            = `git ls-files`.split($/)
