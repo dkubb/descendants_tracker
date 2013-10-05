@@ -24,7 +24,9 @@ module DescendantsTracker
   # @api private
   def add_descendant(descendant)
     ancestor = superclass
-    ancestor.add_descendant(descendant) if ancestor.respond_to?(:add_descendant)
+    if ancestor.respond_to?(:add_descendant)
+      ancestor.add_descendant(descendant)
+    end
     descendants.unshift(descendant)
     self
   end

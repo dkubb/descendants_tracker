@@ -13,14 +13,14 @@ describe DescendantsTracker, '#add_descendant' do
 
   it 'prepends the class to the descendants' do
     object.descendants << original = Class.new
-    expect { subject }.to change { object.descendants.dup }.
-      from([ original ]).
-      to([ descendant, original ])
+    expect { subject }.to change { object.descendants.dup }
+      .from([original])
+      .to([descendant, original])
   end
 
   it 'prepends the class to the superclass descendants' do
-    expect { subject }.to change { object.superclass.descendants.dup }.
-      from([ object ]).
-      to([ descendant, object ])
+    expect { subject }.to change { object.superclass.descendants.dup }
+      .from([object])
+      .to([descendant, object])
   end
 end

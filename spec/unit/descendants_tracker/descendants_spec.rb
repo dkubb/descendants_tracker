@@ -19,6 +19,6 @@ describe DescendantsTracker, '#descendants' do
 
     it_should_behave_like 'an idempotent method'
 
-    it { should eql([ descendant ]) }
+    it { should eql([descendant]) }
   end
 end
