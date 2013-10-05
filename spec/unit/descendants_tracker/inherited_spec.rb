@@ -17,10 +17,10 @@ describe DescendantsTracker, '#inherited' do
   end
 
   it 'adds the descendant' do
-    object.should_receive(:add_descendant) do |descendant|
-      descendant.should be_instance_of(Class)
-      descendant.ancestors.should include(object)
-    end
-    subject
+    expect(object.descendants).to include(subject)
+  end
+
+  it 'sets up descendants in the child class' do
+    expect(subject.descendants).to eql([])
   end
 end

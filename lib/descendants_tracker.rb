@@ -3,6 +3,20 @@
 # Module that adds descendant tracking to a class
 module DescendantsTracker
 
+  # @private
+  def self.extended(descendant)
+    setup(descendant)
+  end
+  private_class_method :extended
+
+  # @return [Array]
+  #
+  # @private
+  def self.setup(descendant)
+    descendant.instance_variable_set('@descendants', [])
+  end
+  private_class_method :extended
+
   # Return the descendants of this class
   #
   # @example
@@ -12,7 +26,7 @@ module DescendantsTracker
   #
   # @api public
   def descendants
-    @descendants ||= []
+    @descendants
   end
 
   # Add the descendant to this class and the superclass
@@ -42,6 +56,7 @@ private
   # @api private
   def inherited(descendant)
     super
+    DescendantsTracker.setup(descendant)
     add_descendant(descendant)
   end
 
