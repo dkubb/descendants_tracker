@@ -15,29 +15,6 @@ descendants_tracker
 
 Small module to track descendants in an unobtrusive way.
 
-Installation
-------------
-
-With Rubygems:
-
-```bash
-$ gem install descendants_tracker
-$ irb -rubygems
->> require 'descendants_tracker'
-=> true
-```
-
-With git and local working copy:
-
-```bash
-$ git clone git://github.com/dkubb/descendants_tracker.git
-$ cd descendants_tracker
-$ rake install
-$ irb -rubygems
->> require 'descendants_tracker'
-=> true
-```
-
 Examples
 --------
 
