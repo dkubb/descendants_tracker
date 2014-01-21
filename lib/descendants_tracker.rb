@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'thread_safe'
+
 # Module that adds descendant tracking to a class
 module DescendantsTracker
 
@@ -21,7 +23,7 @@ module DescendantsTracker
   #
   # @api private
   def self.setup(descendant)
-    descendant.instance_variable_set(:@descendants, [])
+    descendant.instance_variable_set(:@descendants, ThreadSafe::Array.new)
   end
 
   class << self
