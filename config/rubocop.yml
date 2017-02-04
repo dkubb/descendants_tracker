@@ -1,9 +1,8 @@
 AllCops:
-  Includes:
+  Include:
     - '**/*.rake'
     - 'Gemfile'
-    - 'Gemfile.devtools'
-  Excludes:
+  Exclude:
     - '**/vendor/**'
     - '**/benchmarks/**'
 
@@ -58,5 +57,5 @@ TrivialAccessors:
   Enabled: false
 
 # Allow empty lines around body
-EmptyLinesAroundBody:
+Style/EmptyLinesAroundModuleBody:
   Enabled: false
