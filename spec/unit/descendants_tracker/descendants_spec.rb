@@ -15,7 +15,7 @@ describe DescendantsTracker, '#descendants' do
   end
 
   context 'when there are descendants' do
-    let!(:descendant) { Class.new(object) }  # trigger the class inhertance
+    let!(:descendant) { Class.new(object) } # trigger the class inhertance
 
     it_should_behave_like 'an idempotent method'
 

@@ -27,7 +27,7 @@ module DescendantsTracker
   end
 
   class << self
-    alias_method :extended, :setup
+    alias extended setup
     private :extended
   end
 
