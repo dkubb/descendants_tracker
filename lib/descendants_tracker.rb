@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'thread_safe'
+require 'concurrent'
 
 # Module that adds descendant tracking to a class
 module DescendantsTracker
@@ -23,7 +23,7 @@ module DescendantsTracker
   #
   # @api private
   def self.setup(descendant)
-    descendant.instance_variable_set(:@descendants, ThreadSafe::Array.new)
+    descendant.instance_variable_set(:@descendants, Concurrent::Array.new)
   end
 
   class << self
